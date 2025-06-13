@@ -27,7 +27,7 @@ With techniques like **EDA**, **feature engineering**, **resampling**, and **mod
 | XGBoost                  | ✅       |
 | Support Vector Machine   | ✅       |
 | K-Nearest Neighbors      | ✅       |
-
+| Catboost                 | ✅       |
 > Each model is tuned using GridSearchCV to extract the best possible performance!
 
 ---
@@ -66,3 +66,43 @@ cd Customer-Churn-Prediction-
 pip install -r requirements.txt
 # OR manually:
 pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+📁 Dataset Info
+We used the Telco Customer Churn Dataset from Kaggle which includes:
+
+Demographics (gender, age, etc.)
+
+Account info (contract type, internet service)
+
+Charges (monthly, total)
+
+Target: Churn (Yes/No)
+
+🏁 Results Summary
+✅ Top Model: XGBoostClassifier
+✅ Accuracy: 98%
+✅ Insights:
+
+Tenure, monthly charges, and contract type highly impact churn.
+
+One-year and two-year contracts reduce churn.
+
+Senior citizens and single-service users are more likely to leave.
+
+🔮 Future Improvements
+✅ Model Deployment with Streamlit or Flask
+
+✅ Automate data updates
+
+✅ Add SHAP/Feature importance visualizations
+
+✅ Try deep learning or time-series churn modeling
+
+🙌 Acknowledgements
+Made with ❤️ by Manan
+Inspired by real-world customer retention strategies and Kaggle community.
+
+📬 Contact
+📧 Email: Pandeymanan637@gmail.com
+🔗 LinkedIn: https://shorturl.at/Srrv2
+
+⭐ If you found this helpful, give it a star on GitHub!
