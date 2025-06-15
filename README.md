@@ -38,6 +38,7 @@ This is a full-stack **Customer Churn Prediction App** that leverages real-world
 ✅ Model serialized using `joblib`
 
 ---
+You can check out this out Live - https://customerchurnanalyzer.streamlit.app/
 
 ## 📁 Project Structure
 
