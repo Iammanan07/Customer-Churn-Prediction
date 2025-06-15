@@ -13,8 +13,8 @@
 
 This is a full-stack **Customer Churn Prediction App** that leverages real-world telecom customer data to **predict churn behavior**. The model allows businesses to identify customers likely to leave and take proactive steps to retain them.
 
-✨ **Live Demo**: [Add your Streamlit deployment link here]  
-📦 **GitHub Repo**: [Add your GitHub repo link here]
+✨ **Live Demo**: [https://customerchurnanalyzer.streamlit.app/]  
+📦 **GitHub Repo**:
 
 ---
 
