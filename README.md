@@ -1,108 +1,68 @@
-<h1 align="center">📉 Customer Churn Prediction 🔍</h1>
-<p align="center">💡 Predicting customer attrition with powerful ML models – Achieved 98% Accuracy!</p>
+# 📊 Customer Churn Prediction App - Abhishek Pandey.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Model-Accuracy-%F0%9F%93%8998%25-brightgreen" />
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue" />
-  <img src="https://img.shields.io/badge/License-MIT-orange" />
-</p>
+Predict customer churn with up to **98% accuracy** using machine learning, wrapped in a sleek and intuitive web interface powered by **Streamlit**.
+
+![Streamlit App UI](https://i.imgur.com/nv6ZRYI.png) <!-- Replace with your actual image if needed -->
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Live Demo
 
-Customer churn is when users stop doing business with a company. This project aims to **predict churners** using **machine learning models** so businesses can take action before it’s too late!
-
-With techniques like **EDA**, **feature engineering**, **resampling**, and **model selection**, we achieved an outstanding **98% accuracy** on test data!
-
----
-
-## 🧠 Models Implemented
-
-| Model                     | ✅ Used |
-|--------------------------|:-------:|
-| Logistic Regression      | ✅       |
-| Decision Tree            | ✅       |
-| Random Forest            | ✅       |
-| XGBoost                  | ✅       |
-| Support Vector Machine   | ✅       |
-| K-Nearest Neighbors      | ✅       |
-| Catboost                 | ✅       |
-> Each model is tuned using GridSearchCV to extract the best possible performance!
+👉 [Click here to try the app](https://abhishek-pandey-churn-predictor.streamlit.app)  
+_Real-time churn prediction at your fingertips!_
 
 ---
 
-## 📊 Key Features
+## 🔍 Overview
 
-- 📌 **Exploratory Data Analysis** (EDA) with visual plots  
-- 🧹 **Preprocessing**: Label encoding, imputation, class balancing  
-- 🧪 **Model Training**: Classic + Ensemble models  
-- 🏆 **Model Evaluation**: Confusion matrix, classification report  
-- 📈 **98% Accuracy** achieved with tuned XGBoost  
-- 🖼️ Visual insights into churn patterns  
+This project leverages a machine learning model trained on telecom customer data to **predict whether a customer will churn or stay**. It provides a user-friendly interface built using **Streamlit**, allowing business users and analysts to make instant predictions based on customer attributes.
 
----
-
-## 📷 Sample Output (Visuals)
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Iammanan07/Customer-Churn-Prediction-/main/sample_churn_plot.png" width="600" alt="Churn EDA Graph"/>
-</p>
-
-> 📌 Tip: Add EDA/output graphs like churn distribution or model confusion matrices here.
+💡 Powered by:
+- Logistic Regression (chosen after comparing multiple models)
+- Streamlit for the frontend
+- Joblib for model persistence
+- Python’s Pandas & Scikit-learn for data handling and ML
 
 ---
 
-## ⚙️ How to Run
+## 🧠 Features
 
-### 🔧 Setup
+✅ Predict churn with a few simple inputs  
+✅ Intuitive, responsive web interface  
+✅ Lightweight and fast backend  
+✅ Model trained and tuned for high accuracy  
+✅ Easily deployable on Streamlit Community Cloud  
 
-1. Clone the repo  
-```bash
-git clone https://github.com/Iammanan07/Customer-Churn-Prediction-.git
-cd Customer-Churn-Prediction-
-2.Install the requirements
+---
 
-pip install -r requirements.txt
-# OR manually:
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost
-📁 Dataset Info
-We used the Telco Customer Churn Dataset from Kaggle which includes:
+## 📦 Project Structure
 
-Demographics (gender, age, etc.)
+📁 churn_deployment/
+├── app.py ← Streamlit app file
+├── model.pkl ← Trained ML model (joblib format)
+├── requirements.txt ← Python dependencies
+├── README.md ← This file
+└── Optional files (EDA, training scripts, assets)
 
-Account info (contract type, internet service)
 
-Charges (monthly, total)
+## 🛠️ Tech Stack
 
-Target: Churn (Yes/No)
+- **Language**: Python 🐍  
+- **Machine Learning**: scikit-learn  
+- **Data Manipulation**: pandas  
+- **Model Persistence**: joblib  
+- **UI**: Streamlit  
+- **Hosting**: Streamlit Community Cloud  
 
-🏁 Results Summary
-✅ Top Model: XGBoostClassifier
-✅ Accuracy: 98%
-✅ Insights:
+---
 
-Tenure, monthly charges, and contract type highly impact churn.
+## 🧪 How to Run Locally
 
-One-year and two-year contracts reduce churn.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/abhishekpandey-dev/customer-churn-predictor.git
+   cd customer-churn-predictor Install dependencies
 
-Senior citizens and single-service users are more likely to leave.
-
-🔮 Future Improvements
-✅ Model Deployment with Streamlit or Flask
-
-✅ Automate data updates
-
-✅ Add SHAP/Feature importance visualizations
-
-✅ Try deep learning or time-series churn modeling
-
-🙌 Acknowledgements
-Made with ❤️ by Manan
-Inspired by real-world customer retention strategies and Kaggle community.
-
-📬 Contact
-📧 Email: Pandeymanan637@gmail.com
-🔗 LinkedIn: https://shorturl.at/Srrv2
-
-⭐ If you found this helpful, give it a star on GitHub!
+2. pip install -r requirements.txt
+3. Run the app
+streamlit run app.py
