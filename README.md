@@ -1,68 +1,63 @@
-# 📊 Customer Churn Prediction App - Abhishek Pandey.
+<h1 align="center" style="color:#6A0DAD;">📈 Customer Churn Prediction App</h1>
 
-Predict customer churn with up to **98% accuracy** using machine learning, wrapped in a sleek and intuitive web interface powered by **Streamlit**.
-
-![Streamlit App UI](https://i.imgur.com/nv6ZRYI.png) <!-- Replace with your actual image if needed -->
-
----
-
-## 🚀 Live Demo
-
-👉 [Click here to try the app](https://abhishek-pandey-churn-predictor.streamlit.app)  
-_Real-time churn prediction at your fingertips!_
+<p align="center">
+  <img src="https://img.shields.io/badge/Accuracy-98%25-success" alt="accuracy" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression-blue" alt="ML model" />
+  <img src="https://img.shields.io/badge/Deployed%20With-Streamlit-%23FF4B4B" alt="Deployment" />
+  <img src="https://img.shields.io/badge/Python-3.9-green" alt="Python" />
+</p>
 
 ---
 
-## 🔍 Overview
+## 🚀 Overview
 
-This project leverages a machine learning model trained on telecom customer data to **predict whether a customer will churn or stay**. It provides a user-friendly interface built using **Streamlit**, allowing business users and analysts to make instant predictions based on customer attributes.
+This is a full-stack **Customer Churn Prediction App** that leverages real-world telecom customer data to **predict churn behavior**. The model allows businesses to identify customers likely to leave and take proactive steps to retain them.
 
-💡 Powered by:
-- Logistic Regression (chosen after comparing multiple models)
-- Streamlit for the frontend
-- Joblib for model persistence
-- Python’s Pandas & Scikit-learn for data handling and ML
+✨ **Live Demo**: [Add your Streamlit deployment link here]  
+📦 **GitHub Repo**: [Add your GitHub repo link here]
 
 ---
 
-## 🧠 Features
+## 🧠 Tech Stack
 
-✅ Predict churn with a few simple inputs  
-✅ Intuitive, responsive web interface  
-✅ Lightweight and fast backend  
-✅ Model trained and tuned for high accuracy  
-✅ Easily deployable on Streamlit Community Cloud  
-
----
-
-## 📦 Project Structure
-
-📁 churn_deployment/
-├── app.py ← Streamlit app file
-├── model.pkl ← Trained ML model (joblib format)
-├── requirements.txt ← Python dependencies
-├── README.md ← This file
-└── Optional files (EDA, training scripts, assets)
-
-
-## 🛠️ Tech Stack
-
-- **Language**: Python 🐍  
-- **Machine Learning**: scikit-learn  
-- **Data Manipulation**: pandas  
-- **Model Persistence**: joblib  
-- **UI**: Streamlit  
-- **Hosting**: Streamlit Community Cloud  
+- **Python** 🐍  
+- **Pandas, NumPy, Matplotlib, Seaborn** 📊  
+- **Scikit-Learn, Joblib** 🔍  
+- **Streamlit** (for the UI) 🌐  
+- **Git & GitHub** for version control 🛠
 
 ---
 
-## 🧪 How to Run Locally
+## 🔍 Features
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/abhishekpandey-dev/customer-churn-predictor.git
-   cd customer-churn-predictor Install dependencies
+✅ Interactive Streamlit UI  
+✅ Clean and responsive layout  
+✅ Takes real-time input from users  
+✅ Predicts if a customer is likely to churn or not  
+✅ 98% accuracy on test data  
+✅ Model serialized using `joblib`
 
-2. pip install -r requirements.txt
-3. Run the app
-streamlit run app.py
+---
+
+## 📁 Project Structure
+
+```bash
+Customer-Churn-Prediction/
+│
+├── app.py                  # Streamlit App
+├── model.pkl               # Trained Logistic Regression Model
+├── requirements.txt        # All dependencies
+├── churn_notebook.ipynb    # EDA and model building notebook
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv # Dataset
+├── README.md               # You're reading it ;)
+
+📊 Input Fields
+1.Gender, Senior Citizen, Partner, Dependents
+
+2.Tenure, Phone Service, Internet Service
+
+3.Online Security, Backup, Protection, Tech Support
+
+4.Contract type, Paperless Billing
+
+5.Payment Method, Monthly & Total Charges
